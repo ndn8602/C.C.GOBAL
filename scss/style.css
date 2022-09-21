@@ -15,6 +15,10 @@
   scroll-behavior: smooth;
 }
 
+.container {
+  max-width: 1240px !important;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -199,6 +203,10 @@ table {
 .navigation .navbar .nav-item {
   font-size: 20px;
 }
+.navigation .hide {
+  -webkit-animation: navigation-up 0.7s normal ease-out;
+          animation: navigation-up 0.7s normal ease-out;
+}
 
 .header {
   margin-bottom: 60px;
@@ -346,6 +354,22 @@ table {
   }
   100% {
     transform: translateY(0px);
+  }
+}
+@-webkit-keyframes navigation-up {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50px);
+  }
+}
+@keyframes navigation-up {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50px);
   }
 }
 @media screen and (max-width: 992px) {

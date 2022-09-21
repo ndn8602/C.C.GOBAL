@@ -45,6 +45,9 @@
       }
     }
   }
+  .hide {
+    animation: navigation-up 0.7s normal ease-out;
+  }
 }
 
 .header {
@@ -188,6 +191,15 @@
   }
   100% {
     transform: translateY(0px);
+  }
+}
+
+@keyframes navigation-up {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50px);
   }
 }
 

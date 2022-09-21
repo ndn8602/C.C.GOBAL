@@ -14,10 +14,8 @@ function listener(status) {
   let scroll = scrollbar.offset.y;
   console.log(scroll);
   if (scroll >= 300) {
-    $(".navigation").addClass("hide");
     $(".navigation").removeClass("d-none");
   } else {
-    $(".navigation").removeClass("hide");
     $(".navigation").addClass("d-none");
   }
 }
