@@ -1,0 +1,31 @@
+.contact {
+  position: relative;
+  background-image: url("https://images.unsplash.com/photo-1464014449614-e470468e3ec1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  padding: 40px;
+  color: $text-normal;
+  &__desc {
+    h4 {
+      font-weight: $fw-bolder;
+      font-size: 25px;
+    }
+    p {
+      font-size: 14px;
+    }
+    & > * {
+      margin-bottom: 25px;
+    }
+  }
+  form {
+    label {
+      margin-bottom: 10px;
+    }
+    button {
+      background-color: $btn-bg;
+      color: $text-normal;  
+    }
+  }
+}

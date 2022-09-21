@@ -1,0 +1,57 @@
+.thank {
+  .modal {
+    z-index: 1070;
+    &-header {
+      width: 100%;
+      margin: 0 auto;
+      position: relative;
+      background-image: url("https://images.unsplash.com/photo-1464014449614-e470468e3ec1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      object-fit: cover;
+    }
+    .navbar {
+      align-items: flex-start;
+      z-index: 3;
+      &-brand {
+        font-size: 20px;
+        color: $text-normal;
+        overflow: hidden;
+        display: block;
+        display: flex;
+        flex-direction: column;
+        span:first-child {
+          color: $text-main;
+          font-size: 60px;
+          border-bottom: 5px solid $text-main;
+          margin-bottom: 20px;
+        }
+      }
+    }
+    &-body {
+      & > * {
+        margin-bottom: 10px;
+      }
+      h3 {
+        font-weight: $fw-bold;
+        font-size: 24px;
+      }
+      p {
+        margin-left: 10px;
+      }
+    }
+    &-footer {
+      button {
+        color: $btn-bg;
+        &:hover {
+          background-color: $btn-bg;
+          color: $text-normal;
+        }
+      }
+    }
+    .close {
+      color: $text-normal;
+    }
+  }
+}
