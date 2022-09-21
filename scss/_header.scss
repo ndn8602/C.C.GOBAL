@@ -14,6 +14,7 @@
   .navbar {
     align-items: flex-start;
     z-index: 3;
+    background-color: transparent;
     &-brand {
       font-size: 11px;
       color: $text-normal;
