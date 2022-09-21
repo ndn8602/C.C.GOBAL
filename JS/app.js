@@ -9,6 +9,19 @@ let scrollbar = Scrollbar.init(
 
 scrollbar.setPosition(0, 0);
 scrollbar.track.xAxis.element.remove();
+//scroll animattion
+function listener(status) {
+  let scroll = scrollbar.offset.y;
+  console.log(scroll);
+  if (scroll >= 300) {
+    $(".navigation").addClass("hide");
+    $(".navigation").removeClass("d-none");
+  } else {
+    $(".navigation").removeClass("hide");
+    $(".navigation").addClass("d-none");
+  }
+}
+scrollbar.addListener(listener);
 //Handle offset Scroll
 AOS.init({
   delay: 500,
